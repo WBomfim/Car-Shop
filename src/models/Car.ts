@@ -10,6 +10,8 @@ const carSchema = new Schema<ICar>({
   buyValue: Number,
   doorsQty: { type: Number, min: 2, max: 4 },
   seatsQty: { type: Number, min: 2, max: 7 },
+}, {
+  versionKey: false,
 });
 
 export default class CarModel extends MongoModel<ICar> {
