@@ -6,7 +6,7 @@ type ErrorObject = {
 };
 
 export enum ErrorsTypes {
-  InvalidMongoId = 'InvalidMongoId',
+  INVALID_MONGO_ID = 'INVALID_MONGO_ID',
 }
 
 export type ErrorCatalog = {
@@ -14,7 +14,7 @@ export type ErrorCatalog = {
 };
 
 export const errorCatalog: ErrorCatalog = {
-  InvalidMongoId: {
+  INVALID_MONGO_ID: {
     statusHttp: StatusHttp.BAD_REQUEST,
     message: 'Id must be a 24 characters hexadecimal',
   },
