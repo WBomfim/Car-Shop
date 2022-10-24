@@ -1,8 +1,8 @@
 import StatusHttp from './statusHttp';
 
 type ErrorObject = { 
-  message: string;
   statusHttp: number
+  error: string;
 };
 
 export enum ErrorsTypes {
@@ -17,10 +17,10 @@ export type ErrorCatalog = {
 export const errorCatalog: ErrorCatalog = {
   INVALID_MONGO_ID: {
     statusHttp: StatusHttp.BAD_REQUEST,
-    message: 'Id must be a 24 characters hexadecimal',
+    error: 'Id must have 24 hexadecimal characters',
   },
   NOT_FOUND: {
     statusHttp: StatusHttp.NOT_FOUND,
-    message: 'Object not found',
+    error: 'Object not found',
   },
 };
