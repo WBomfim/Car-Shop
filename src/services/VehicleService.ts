@@ -31,7 +31,7 @@ export default abstract class Service<T> implements IService<T> {
   public async update(_id: string, obj: unknown): Promise<T | null> {
     const vehicle = this._validate.safeParse(obj);
     if (!vehicle.success) throw vehicle.error;
-    const newVehicle = this._vehicle.update(_id, vehicle.data);
+    const newVehicle = await this._vehicle.update(_id, vehicle.data);
     if (!newVehicle) throw new Error(ErrorsTypes.NOT_FOUND);
     return newVehicle;
   }
