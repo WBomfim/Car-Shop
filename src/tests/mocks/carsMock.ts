@@ -16,3 +16,12 @@ export const validCarWithId = {
   seatsQty: 2,
   doorsQty: 2
 };
+
+export const invalidCar = {
+  model: 'Un',
+  year: 1963,
+  color: 'red',
+  buyValue: 3500,
+  seatsQty: 2,
+  doorsQty: 9
+};
