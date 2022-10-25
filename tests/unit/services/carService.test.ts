@@ -1,9 +1,9 @@
 import { ZodError } from 'zod';
 import { expect } from 'chai';
 import Sinon from 'sinon';
-import CarService from '../../../services/Car';
-import { carZodSchema } from '../../../interfaces/ICar';
-import CarModel from '../../../models/Car';
+import CarService from '../../../src/services/Car';
+import { carZodSchema } from '../../../src/interfaces/ICar';
+import CarModel from '../../../src/models/Car';
 import { validCar, invalidCar, validCarWithId } from '../../mocks/carsMock';
 
 describe('Tests for the CarService class', () => {

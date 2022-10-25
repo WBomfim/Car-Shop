@@ -1,10 +1,10 @@
 import { expect } from "chai";
 import Sinon from "sinon";
 import { Request, Response } from 'express';
-import CarController from "../../../controllers/Car";
-import CarService from "../../../services/Car";
-import CarModel from "../../../models/Car";
-import { carZodSchema } from "../../../interfaces/ICar";
+import CarController from "../../../src/controllers/Car";
+import CarService from "../../../src/services/Car";
+import CarModel from "../../../src/models/Car";
+import { carZodSchema } from "../../../src/interfaces/ICar";
 import { validCar, validCarWithId } from '../../mocks/carsMock';
 
 describe("Tests for the CarController class", () => {
