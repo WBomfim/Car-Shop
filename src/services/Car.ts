@@ -1,4 +1,4 @@
 import { ICar } from '../interfaces/ICar';
-import Service from './VehicleService';
+import VehicleService from './VehicleService';
 
-export default class CarService extends Service<ICar> {}
+export default class CarService extends VehicleService<ICar> {}
