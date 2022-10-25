@@ -7,7 +7,7 @@ const carSchema = new Schema<ICar>({
   year: { type: Number, min: 1900, max: 2022 },
   color: { type: String, length: 3 },
   status: { type: Boolean, required: false },
-  buyValue: Number,
+  buyValue: { type: Number, min: 0 },
   doorsQty: { type: Number, min: 2, max: 4 },
   seatsQty: { type: Number, min: 2, max: 7 },
 }, {
