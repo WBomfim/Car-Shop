@@ -23,7 +23,6 @@ const errorHandler: ErrorRequestHandler = (
     return res.status(statusHttp).json({ error });
   }
 
-  console.error(err);
   return res.status(StatusHttp.INTERNAL_ERROR).json({ message: 'Internal server error' });
 };
 
